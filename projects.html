@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-title-en="Projects — Noranda Royalties" data-title-fr="Projets — Redevances Noranda">
+    Projects — Noranda Royalties
+  </title>
+  <meta name="description" content="Mineral exploration projects available in Quebec. Gold, copper, silver and lithium. Noranda Royalties Inc.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-mark"><span class="logo-n">N</span><span class="logo-r">R</span></div>
+        <div class="logo-sep"></div>
+        <div class="logo-wordmark">
+          <span class="logo-w1">NORANDA</span>
+          <span class="logo-w2">ROYALTIES</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a>
+        <a href="track-record.html" data-en="Track Record" data-fr="Historique">Track Record</a>
+        <a href="about.html" data-en="About" data-fr="À Propos">About</a>
+        <a href="contact.html" class="nav-cta" data-en="Contact" data-fr="Contact">Contact</a>
+      </div>
+      <div class="nav-controls">
+        <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language">
+          <span class="lang-en lang-active">EN</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-fr">FR</span>
+        </button>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMobileMenu()" data-en="Home" data-fr="Accueil">Home</a>
+    <a href="projects.html" onclick="closeMobileMenu()" data-en="Projects" data-fr="Projets">Projects</a>
+    <a href="track-record.html" onclick="closeMobileMenu()" data-en="Track Record" data-fr="Historique">Track Record</a>
+    <a href="about.html" onclick="closeMobileMenu()" data-en="About" data-fr="À Propos">About</a>
+    <a href="contact.html" class="mobile-cta" onclick="closeMobileMenu()" data-en="Contact Us" data-fr="Contactez-Nous">Contact Us</a>
+    <div class="mobile-lang">
+      <button onclick="setLanguage('en'); closeMobileMenu();" class="lang-en">EN</button>
+      <button onclick="setLanguage('fr'); closeMobileMenu();" class="lang-fr">FR</button>
+    </div>
+  </div>
+
+  <!-- ── PAGE HEADER ── -->
+  <header class="page-header">
+    <div class="page-header-num" aria-hidden="true">P</div>
+    <div class="container">
+      <p class="eyebrow fade-in" data-en="Current Portfolio" data-fr="Portefeuille Actuel">Current Portfolio</p>
+      <h1 class="fade-in delay-1" data-en="Projects" data-fr="Projets">Projects</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects-section">
+      <div class="container">
+
+        <p class="fade-in"
+          data-en="We maintain an active portfolio of carefully selected exploration projects across Quebec. Available projects can be acquired via option, joint venture, or direct sale."
+          data-fr="Nous maintenons un portefeuille actif de projets d'exploration soigneusement sélectionnés à travers le Québec. Les projets disponibles peuvent être acquis via option, coentreprise ou vente directe.">
+          We maintain an active portfolio of carefully selected exploration projects across Quebec. Available projects can be acquired via option, joint venture, or direct sale.
+        </p>
+
+        <div class="project-list" style="counter-reset: project-counter;">
+
+          <!-- 01 — Gold & Copper, Abitibi -->
+          <div class="project-row fade-in delay-1">
+            <div class="project-num" aria-hidden="true">01</div>
+            <div class="project-info">
+              <p class="project-commodity"
+                data-en="Gold &amp; Copper"
+                data-fr="Or &amp; Cuivre">
+                Gold &amp; Copper
+              </p>
+              <h3 data-en="Abitibi-Témiscamingue, Quebec" data-fr="Abitibi-Témiscamingue, Québec">
+                Abitibi-Témiscamingue, Quebec
+              </h3>
+              <p class="project-meta"
+                data-en="3 Projects Available"
+                data-fr="3 Projets Disponibles">
+                3 Projects Available
+              </p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <!-- 02 — Gold, Copper & Nickel, Baie-James -->
+          <div class="project-row fade-in delay-2">
+            <div class="project-num" aria-hidden="true">02</div>
+            <div class="project-info">
+              <p class="project-commodity"
+                data-en="Gold, Copper &amp; Nickel"
+                data-fr="Or, Cuivre &amp; Nickel">
+                Gold, Copper &amp; Nickel
+              </p>
+              <h3 data-en="James Bay / Baie-James, Quebec" data-fr="Baie-James / James Bay, Québec">
+                James Bay / Baie-James, Quebec
+              </h3>
+              <p class="project-meta"
+                data-en="4 Projects Available"
+                data-fr="4 Projets Disponibles">
+                4 Projects Available
+              </p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <!-- 03 — Lithium, Baie-James — Available -->
+          <div class="project-row fade-in delay-3">
+            <div class="project-num" aria-hidden="true">03</div>
+            <div class="project-info">
+              <p class="project-commodity" data-en="Lithium" data-fr="Lithium">Lithium</p>
+              <h3 data-en="James Bay / Baie-James, Quebec" data-fr="Baie-James / James Bay, Québec">
+                James Bay / Baie-James, Quebec
+              </h3>
+              <p class="project-meta"
+                data-en="5 Projects Available"
+                data-fr="5 Projets Disponibles">
+                5 Projects Available
+              </p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+        </div><!-- /project-list -->
+
+        <div class="projects-disclaimer fade-in delay-4">
+          <p data-en="Project details and technical information available upon direct inquiry."
+             data-fr="Les détails des projets et les informations techniques sont disponibles sur demande directe.">
+            Project details and technical information available upon direct inquiry.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-dark">
+      <div class="container" style="max-width: 540px;">
+        <p class="eyebrow fade-in" style="color: var(--gold);"
+          data-en="Get in Touch" data-fr="Prenez Contact">Get in Touch</p>
+        <h2 class="fade-in delay-1"
+          data-en="Ready to discuss a project?"
+          data-fr="Prêt à discuter d'un projet?">
+          Ready to discuss a project?
+        </h2>
+        <p class="fade-in delay-2" style="color: rgba(255,255,255,0.3); margin-bottom: 40px;"
+          data-en="We respond within 24 hours."
+          data-fr="Nous répondons dans les 24 heures.">
+          We respond within 24 hours.
+        </p>
+        <a href="contact.html" class="btn-outline-light fade-in delay-3"
+          data-en="Contact Us" data-fr="Contactez-Nous">
+          Contact Us
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="nav-logo" style="opacity:0.65;">
+          <div class="logo-mark" style="font-size:1.5rem;"><span class="logo-n">N</span><span class="logo-r">R</span></div>
+          <div class="logo-sep" style="height:26px;"></div>
+          <div class="logo-wordmark">
+            <span class="logo-w1" style="font-size:0.66rem;">NORANDA</span>
+            <span class="logo-w2" style="font-size:0.66rem;">ROYALTIES</span>
+          </div>
+        </a>
+        <nav class="footer-nav">
+          <a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a>
+          <a href="track-record.html" data-en="Track Record" data-fr="Historique">Track Record</a>
+          <a href="about.html" data-en="About" data-fr="À Propos">About</a>
+          <a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-en="© 2026 Noranda Royalties Inc. / Redevances Noranda Inc." data-fr="© 2026 Redevances Noranda Inc. / Noranda Royalties Inc.">
+          © 2026 Noranda Royalties Inc. / Redevances Noranda Inc.
+        </p>
+        <p class="footer-tagline" data-en="Quebec, Canada" data-fr="Québec, Canada">Quebec, Canada</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
