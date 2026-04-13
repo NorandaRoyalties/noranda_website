@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" role="img" aria-label="Noranda Royalties">
+  <!-- NR Monogram -->
+  <text x="0" y="54" font-family="'DM Sans', Arial Black, sans-serif" font-weight="800" font-size="58" fill="white" letter-spacing="-3">N</text>
+  <text x="30" y="54" font-family="'DM Sans', Arial Black, sans-serif" font-weight="800" font-size="58" fill="#A86318" letter-spacing="-3">R</text>
+  <!-- Vertical separator -->
+  <line x1="84" y1="6" x2="84" y2="58" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+  <!-- Wordmark -->
+  <text x="98" y="27" font-family="'DM Sans', Arial, sans-serif" font-weight="700" font-size="15" fill="white" letter-spacing="2">NORANDA</text>
+  <text x="98" y="50" font-family="'DM Sans', Arial, sans-serif" font-weight="700" font-size="15" fill="white" letter-spacing="2">ROYALTIES</text>
+</svg>

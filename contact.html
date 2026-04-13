@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-title-en="Contact — Noranda Royalties" data-title-fr="Contact — Redevances Noranda">
+    Contact — Noranda Royalties
+  </title>
+  <meta name="description" content="Contact Noranda Royalties Inc. We respond within 24 hours. info@norandaroyalties.com">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-mark">
+          <span class="logo-n">N</span><span class="logo-r">R</span>
+        </div>
+        <div class="logo-sep"></div>
+        <div class="logo-wordmark">
+          <span class="logo-w1">NORANDA</span>
+          <span class="logo-w2">ROYALTIES</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a>
+        <a href="track-record.html" data-en="Track Record" data-fr="Historique">Track Record</a>
+        <a href="about.html" data-en="About" data-fr="À Propos">About</a>
+        <a href="contact.html" class="nav-cta" data-en="Contact" data-fr="Contact">Contact</a>
+      </div>
+
+      <div class="nav-controls">
+        <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language">
+          <span class="lang-en lang-active">EN</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-fr">FR</span>
+        </button>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMobileMenu()" data-en="Home" data-fr="Accueil">Home</a>
+    <a href="projects.html" onclick="closeMobileMenu()" data-en="Projects" data-fr="Projets">Projects</a>
+    <a href="track-record.html" onclick="closeMobileMenu()" data-en="Track Record" data-fr="Historique">Track Record</a>
+    <a href="about.html" onclick="closeMobileMenu()" data-en="About" data-fr="À Propos">About</a>
+    <a href="contact.html" class="mobile-cta" onclick="closeMobileMenu()" data-en="Contact Us" data-fr="Contactez-Nous">Contact Us</a>
+    <div class="mobile-lang">
+      <button onclick="setLanguage('en'); closeMobileMenu();" class="lang-en">EN</button>
+      <button onclick="setLanguage('fr'); closeMobileMenu();" class="lang-fr">FR</button>
+    </div>
+  </div>
+
+  <!-- ── PAGE HEADER ── -->
+  <header class="page-header">
+    <div class="container">
+      <p class="eyebrow fade-in" data-en="Get in Touch" data-fr="Prenez Contact">Get in Touch</p>
+      <h1 class="fade-in delay-1" data-en="Contact Us" data-fr="Contactez-Nous">Contact Us</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left: Info -->
+          <div class="contact-info">
+            <p class="eyebrow fade-in" data-en="Write to Us" data-fr="Écrivez-Nous">Write to Us</p>
+            <h2 class="fade-in delay-1"
+              data-en="Let's discuss your project."
+              data-fr="Discutons de votre projet.">
+              Let's discuss your project.
+            </h2>
+            <div class="gold-line fade-in delay-1"></div>
+            <p class="fade-in delay-2"
+              data-en="Whether you are looking to acquire exploration ground in Quebec, need support establishing operations in the province, or have an opportunity you'd like to discuss, reach out."
+              data-fr="Que vous cherchiez à acquérir des terrains d'exploration au Québec, à établir des activités dans la province ou à discuter d'une opportunité, contactez-nous.">
+              Whether you are looking to acquire exploration ground in Quebec, need support establishing operations in the province, or have an opportunity you'd like to discuss, reach out.
+            </p>
+            <p class="fade-in delay-3"
+              data-en="Project details and technical information are shared upon direct inquiry."
+              data-fr="Les détails des projets et les informations techniques sont disponibles sur demande directe.">
+              Project details and technical information are shared upon direct inquiry.
+            </p>
+
+            <div class="contact-email-wrap fade-in delay-3">
+              <a href="mailto:info@norandaroyalties.com" class="contact-email">
+                <span class="contact-email-text">info@norandaroyalties.com</span>
+                <svg class="contact-email-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                </svg>
+              </a>
+              <button class="contact-copy-btn" onclick="copyEmail()" aria-label="Copy email address">
+                <span class="copy-label" data-en="Copy" data-fr="Copier">Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-response fade-in" style="margin-top: 40px;">
+              <p data-en="We respond within 24 hours." data-fr="Nous répondons dans les 24 heures.">
+                We respond within 24 hours.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="fade-in delay-2">
+            <form class="contact-form" onsubmit="handleContact(event)">
+
+              <div class="form-group">
+                <label data-en="Name *" data-fr="Nom *">Name *</label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  data-en-ph="Your full name"
+                  data-fr-ph="Votre nom complet"
+                  placeholder="Your full name"
+                >
+              </div>
+
+              <div class="form-group">
+                <label data-en="Email *" data-fr="Courriel *">Email *</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  data-en-ph="Your email address"
+                  data-fr-ph="Votre adresse courriel"
+                  placeholder="Your email address"
+                >
+              </div>
+
+              <div class="form-group">
+                <label data-en="Company" data-fr="Compagnie">Company</label>
+                <input
+                  type="text"
+                  name="company"
+                  data-en-ph="Company name (optional)"
+                  data-fr-ph="Nom de la compagnie (optionnel)"
+                  placeholder="Company name (optional)"
+                >
+              </div>
+
+              <div class="form-group">
+                <label data-en="Message *" data-fr="Message *">Message *</label>
+                <textarea
+                  name="message"
+                  rows="6"
+                  required
+                  data-en-ph="Briefly describe your interest or inquiry…"
+                  data-fr-ph="Décrivez brièvement votre intérêt ou votre demande…"
+                  placeholder="Briefly describe your interest or inquiry…"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary">
+                <span data-en="Send Message" data-fr="Envoyer">Send Message</span>
+              </button>
+
+            </form>
+          </div>
+
+        </div><!-- /contact-grid -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="nav-logo" style="opacity:0.8;">
+          <div class="logo-mark" style="font-size:1.6rem;">
+            <span class="logo-n">N</span><span class="logo-r">R</span>
+          </div>
+          <div class="logo-sep" style="height:28px;"></div>
+          <div class="logo-wordmark">
+            <span class="logo-w1" style="font-size:0.7rem;">NORANDA</span>
+            <span class="logo-w2" style="font-size:0.7rem;">ROYALTIES</span>
+          </div>
+        </a>
+        <nav class="footer-nav">
+          <a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a>
+          <a href="track-record.html" data-en="Track Record" data-fr="Historique">Track Record</a>
+          <a href="about.html" data-en="About" data-fr="À Propos">About</a>
+          <a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy"
+          data-en="© 2026 Noranda Royalties Inc. / Redevances Noranda Inc. All rights reserved."
+          data-fr="© 2026 Redevances Noranda Inc. / Noranda Royalties Inc. Tous droits réservés.">
+          © 2026 Noranda Royalties Inc. / Redevances Noranda Inc. All rights reserved.
+        </p>
+        <p class="footer-tagline"
+          data-en="Rouyn-Noranda, Quebec, Canada"
+          data-fr="Rouyn-Noranda, Québec, Canada">
+          Rouyn-Noranda, Quebec, Canada
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

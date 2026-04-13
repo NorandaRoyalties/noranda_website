@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-title-en="Noranda Royalties — Mining Project Generator, Quebec" data-title-fr="Redevances Noranda — Générateur de Projets Miniers, Québec">
+    Noranda Royalties — Mining Project Generator, Quebec
+  </title>
+  <meta name="description" content="Noranda Royalties Inc. — Mining project generator. Gold, copper and lithium exploration projects in Quebec, Canada.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-mark">
+          <span class="logo-n">N</span><span class="logo-r">R</span>
+        </div>
+        <div class="logo-sep"></div>
+        <div class="logo-wordmark">
+          <span class="logo-w1">NORANDA</span>
+          <span class="logo-w2">ROYALTIES</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a>
+        <a href="track-record.html" data-en="Track Record" data-fr="Historique">Track Record</a>
+        <a href="about.html" data-en="About" data-fr="À Propos">About</a>
+        <a href="contact.html" class="nav-cta" data-en="Contact" data-fr="Contact">Contact</a>
+      </div>
+
+      <div class="nav-controls">
+        <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language">
+          <span class="lang-en lang-active">EN</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-fr">FR</span>
+        </button>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMobileMenu()" data-en="Home" data-fr="Accueil">Home</a>
+    <a href="projects.html" onclick="closeMobileMenu()" data-en="Projects" data-fr="Projets">Projects</a>
+    <a href="track-record.html" onclick="closeMobileMenu()" data-en="Track Record" data-fr="Historique">Track Record</a>
+    <a href="about.html" onclick="closeMobileMenu()" data-en="About" data-fr="À Propos">About</a>
+    <a href="contact.html" class="mobile-cta" onclick="closeMobileMenu()" data-en="Contact Us" data-fr="Contactez-Nous">Contact Us</a>
+    <div class="mobile-lang">
+      <button onclick="setLanguage('en'); closeMobileMenu();" class="lang-en">EN</button>
+      <button onclick="setLanguage('fr'); closeMobileMenu();" class="lang-fr">FR</button>
+    </div>
+  </div>
+
+  <!-- ── HERO ── -->
+  <main>
+    <section class="hero">
+      <div class="hero-bg-mark" aria-hidden="true">NR</div>
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow fade-in"
+            data-en="Project Generator — Quebec, Canada"
+            data-fr="Générateur de Projets — Québec, Canada">
+            Project Generator — Quebec, Canada
+          </p>
+          <h1 class="fade-in delay-1"
+            data-en="Quality ground.<br>Serious buyers."
+            data-fr="Des terrains de qualité.<br>Des acheteurs sérieux.">
+            Quality ground.<br>Serious buyers.
+          </h1>
+          <p class="hero-sub fade-in delay-2"
+            data-en="Noranda Royalties Inc. — Founded 2021"
+            data-fr="Redevances Noranda Inc. — Fondée en 2021">
+            Noranda Royalties Inc. — Founded 2021
+          </p>
+          <a href="contact.html" class="btn-primary fade-in delay-3"
+            data-en="Contact Us"
+            data-fr="Contactez-Nous">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS BAND ── -->
+    <section class="stats-band">
+      <div class="container">
+        <div class="stat fade-in">
+          <span class="stat-number">9</span>
+          <span class="stat-label" data-en="Transactions Completed" data-fr="Transactions Conclues">Transactions Completed</span>
+        </div>
+        <div class="stat fade-in delay-1">
+          <span class="stat-number">$2M+</span>
+          <span class="stat-label" data-en="In Closed Deals" data-fr="En Ententes Conclues">In Closed Deals</span>
+        </div>
+        <div class="stat fade-in delay-2">
+          <span class="stat-number">14</span>
+          <span class="stat-label" data-en="Active Projects" data-fr="Projets Actifs">Active Projects</span>
+        </div>
+        <div class="stat fade-in delay-3">
+          <span class="stat-number">24,000+</span>
+          <span class="stat-label" data-en="Hectares Under Management" data-fr="Hectares Sous Gestion">Hectares Under Management</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── INTRO ── -->
+    <section class="intro-section">
+      <div class="container">
+        <p class="eyebrow fade-in" data-en="What We Do" data-fr="Ce Que Nous Faisons">What We Do</p>
+        <h2 class="fade-in delay-1"
+          data-en="We identify, assemble,<br>and monetize."
+          data-fr="Nous identifions, assemblons<br>et monétisons.">
+          We identify, assemble,<br>and monetize.
+        </h2>
+        <span class="gold-rule fade-in delay-1"></span>
+        <p class="fade-in delay-2"
+          data-en="Noranda Royalties Inc. is a mining project generator operating across Quebec's most prolific mineral belts. We source and structure exploration projects targeting gold, copper, nickel, and lithium, and bring them to market through options, joint ventures, and direct sales."
+          data-fr="Redevances Noranda Inc. est un générateur de projets miniers opérant à travers les ceintures minérales les plus prolifiques du Québec. Nous sourceons et structurons des projets d'exploration ciblant l'or, le cuivre, le nickel et le lithium, et les mettons en marché via des options, des coentreprises et des ventes directes.">
+          Noranda Royalties Inc. is a mining project generator operating across Quebec's most prolific mineral belts. We source and structure exploration projects targeting gold, copper, nickel, and lithium, and bring them to market through options, joint ventures, and direct sales.
+        </p>
+        <p class="fade-in delay-3"
+          data-en="On every transaction, we retain a 2% royalty, building an active portfolio of royalty interests alongside our deal flow. Our long-term interests are aligned with the quality of what we bring to market."
+          data-fr="Sur chaque transaction, nous conservons une redevance de 2 %, constituant un portefeuille actif d'intérêts de redevance parallèlement à notre flux d'affaires. Nos intérêts à long terme sont alignés sur la qualité de ce que nous apportons au marché.">
+          On every transaction, we retain a 2% royalty, building an active portfolio of royalty interests alongside our deal flow. Our long-term interests are aligned with the quality of what we bring to market.
+        </p>
+        <a href="projects.html" class="text-link fade-in delay-3"
+          data-en="View Projects"
+          data-fr="Voir les Projets">
+          View Projects
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="nav-logo" style="opacity:0.65;">
+          <div class="logo-mark" style="font-size:1.5rem;">
+            <span class="logo-n">N</span><span class="logo-r">R</span>
+          </div>
+          <div class="logo-sep" style="height:26px;"></div>
+          <div class="logo-wordmark">
+            <span class="logo-w1" style="font-size:0.66rem;">NORANDA</span>
+            <span class="logo-w2" style="font-size:0.66rem;">ROYALTIES</span>
+          </div>
+        </a>
+        <nav class="footer-nav">
+          <a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a>
+          <a href="track-record.html" data-en="Track Record" data-fr="Historique">Track Record</a>
+          <a href="about.html" data-en="About" data-fr="À Propos">About</a>
+          <a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy"
+          data-en="© 2026 Noranda Royalties Inc. / Redevances Noranda Inc."
+          data-fr="© 2026 Redevances Noranda Inc. / Noranda Royalties Inc.">
+          © 2026 Noranda Royalties Inc. / Redevances Noranda Inc.
+        </p>
+        <p class="footer-tagline"
+          data-en="Quebec, Canada"
+          data-fr="Québec, Canada">
+          Quebec, Canada
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

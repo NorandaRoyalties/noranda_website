@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-title-en="Projects — Noranda Royalties" data-title-fr="Projets — Redevances Noranda">
+    Projects — Noranda Royalties
+  </title>
+  <meta name="description" content="Mineral exploration projects available in Quebec. Gold, copper, silver and lithium. Noranda Royalties Inc.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-mark"><span class="logo-n">N</span><span class="logo-r">R</span></div>
+        <div class="logo-sep"></div>
+        <div class="logo-wordmark">
+          <span class="logo-w1">NORANDA</span>
+          <span class="logo-w2">ROYALTIES</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a>
+        <a href="track-record.html" data-en="Track Record" data-fr="Historique">Track Record</a>
+        <a href="about.html" data-en="About" data-fr="À Propos">About</a>
+        <a href="contact.html" class="nav-cta" data-en="Contact" data-fr="Contact">Contact</a>
+      </div>
+      <div class="nav-controls">
+        <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language">
+          <span class="lang-en lang-active">EN</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-fr">FR</span>
+        </button>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMobileMenu()" data-en="Home" data-fr="Accueil">Home</a>
+    <a href="projects.html" onclick="closeMobileMenu()" data-en="Projects" data-fr="Projets">Projects</a>
+    <a href="track-record.html" onclick="closeMobileMenu()" data-en="Track Record" data-fr="Historique">Track Record</a>
+    <a href="about.html" onclick="closeMobileMenu()" data-en="About" data-fr="À Propos">About</a>
+    <a href="contact.html" class="mobile-cta" onclick="closeMobileMenu()" data-en="Contact Us" data-fr="Contactez-Nous">Contact Us</a>
+    <div class="mobile-lang">
+      <button onclick="setLanguage('en'); closeMobileMenu();" class="lang-en">EN</button>
+      <button onclick="setLanguage('fr'); closeMobileMenu();" class="lang-fr">FR</button>
+    </div>
+  </div>
+
+  <!-- ── PAGE HEADER ── -->
+  <header class="page-header">
+    <div class="page-header-num" aria-hidden="true">P</div>
+    <div class="container">
+      <p class="eyebrow fade-in" data-en="Current Portfolio" data-fr="Portefeuille Actuel">Current Portfolio</p>
+      <h1 class="fade-in delay-1" data-en="Projects" data-fr="Projets">Projects</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects-section">
+      <div class="container">
+
+        <p class="fade-in"
+          data-en="We maintain an active portfolio of 14 carefully selected exploration projects across 24,000+ hectares in Quebec. Available projects can be acquired via option, joint venture, or direct sale."
+          data-fr="Nous maintenons un portefeuille actif de 14 projets d'exploration soigneusement sélectionnés sur plus de 24 000 hectares au Québec. Les projets disponibles peuvent être acquis via option, coentreprise ou vente directe.">
+          We maintain an active portfolio of 14 carefully selected exploration projects across 24,000+ hectares in Quebec. Available projects can be acquired via option, joint venture, or direct sale.
+        </p>
+
+        <!-- ── GOLD ── -->
+        <div class="project-list">
+
+          <p class="eyebrow fade-in" style="margin-top: 56px;"
+            data-en="Gold" data-fr="Or">Gold</p>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">01</div>
+            <div class="project-info">
+              <h3>Frontière</h3>
+              <p class="project-commodity" data-en="Au — Orogenic Gold" data-fr="Au — Or Orogénique">Au — Orogenic Gold</p>
+              <p class="project-meta" data-en="676 ha · 12 claims · Rouyn-Noranda" data-fr="676 ha · 12 claims · Rouyn-Noranda">676 ha · 12 claims · Rouyn-Noranda</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">02</div>
+            <div class="project-info">
+              <h3>Lois-Au</h3>
+              <p class="project-commodity" data-en="Au — Orogenic Gold" data-fr="Au — Or Orogénique">Au — Orogenic Gold</p>
+              <p class="project-meta" data-en="2,435 ha · 44 claims · Abitibi-Ouest" data-fr="2 435 ha · 44 claims · Abitibi-Ouest">2,435 ha · 44 claims · Abitibi-Ouest</p>
+            </div>
+            <div class="project-status" style="color: var(--gold);">
+              <span data-en="Under Option" data-fr="Sous Option">Under Option</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">03</div>
+            <div class="project-info">
+              <h3>Shpogan</h3>
+              <p class="project-commodity" data-en="Au, Cu — Greenstone Belt" data-fr="Au, Cu — Ceinture de Roches Vertes">Au, Cu — Greenstone Belt</p>
+              <p class="project-meta" data-en="2,014 ha · 39 claims · Abitibi-Témiscamingue" data-fr="2 014 ha · 39 claims · Abitibi-Témiscamingue">2,014 ha · 39 claims · Abitibi-Témiscamingue</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <!-- ── COPPER & ZINC (VMS) ── -->
+          <p class="eyebrow fade-in" style="margin-top: 56px;"
+            data-en="Copper &amp; Zinc" data-fr="Cuivre &amp; Zinc">Copper &amp; Zinc</p>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">04</div>
+            <div class="project-info">
+              <h3>Au-thier</h3>
+              <p class="project-commodity" data-en="Cu, Zn — VMS" data-fr="Cu, Zn — SMV">Cu, Zn — VMS</p>
+              <p class="project-meta" data-en="2,203 ha · 39 claims · Abitibi-Ouest" data-fr="2 203 ha · 39 claims · Abitibi-Ouest">2,203 ha · 39 claims · Abitibi-Ouest</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">05</div>
+            <div class="project-info">
+              <h3>CDC</h3>
+              <p class="project-commodity" data-en="Cu, Zn — VMS" data-fr="Cu, Zn — SMV">Cu, Zn — VMS</p>
+              <p class="project-meta" data-en="1,140 ha · 20 claims · Rouyn-Noranda" data-fr="1 140 ha · 20 claims · Rouyn-Noranda">1,140 ha · 20 claims · Rouyn-Noranda</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">06</div>
+            <div class="project-info">
+              <h3>Clericy</h3>
+              <p class="project-commodity" data-en="Cu, Zn — VMS" data-fr="Cu, Zn — SMV">Cu, Zn — VMS</p>
+              <p class="project-meta" data-en="420 ha · 10 claims · Rouyn-Noranda" data-fr="420 ha · 10 claims · Rouyn-Noranda">420 ha · 10 claims · Rouyn-Noranda</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">07</div>
+            <div class="project-info">
+              <h3>Kipawa</h3>
+              <p class="project-commodity" data-en="Cu, Zn — VMS" data-fr="Cu, Zn — SMV">Cu, Zn — VMS</p>
+              <p class="project-meta" data-en="177 ha · 3 claims · Témiscamingue" data-fr="177 ha · 3 claims · Témiscamingue">177 ha · 3 claims · Témiscamingue</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">08</div>
+            <div class="project-info">
+              <h3>Rupert</h3>
+              <p class="project-commodity" data-en="Cu, Zn — VMS" data-fr="Cu, Zn — SMV">Cu, Zn — VMS</p>
+              <p class="project-meta" data-en="533 ha · 10 claims · Jamésie" data-fr="533 ha · 10 claims · Jamésie">533 ha · 10 claims · Jamésie</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <!-- ── NICKEL ── -->
+          <p class="eyebrow fade-in" style="margin-top: 56px;"
+            data-en="Nickel" data-fr="Nickel">Nickel</p>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">09</div>
+            <div class="project-info">
+              <h3>Chapeau</h3>
+              <p class="project-commodity" data-en="Ni — Ultramafic / Greenstone Belt" data-fr="Ni — Ultramafique / Ceinture de Roches Vertes">Ni — Ultramafic / Greenstone Belt</p>
+              <p class="project-meta" data-en="1,229 ha · 24 claims · Jamésie" data-fr="1 229 ha · 24 claims · Jamésie">1,229 ha · 24 claims · Jamésie</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">10</div>
+            <div class="project-info">
+              <h3>Tapia-Lake</h3>
+              <p class="project-commodity" data-en="Ni — Ultramafic / Greenstone Belt" data-fr="Ni — Ultramafique / Ceinture de Roches Vertes">Ni — Ultramafic / Greenstone Belt</p>
+              <p class="project-meta" data-en="6,658 ha · 131 claims · Jamésie" data-fr="6 658 ha · 131 claims · Jamésie">6,658 ha · 131 claims · Jamésie</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <!-- ── LITHIUM ── -->
+          <p class="eyebrow fade-in" style="margin-top: 56px;"
+            data-en="Lithium" data-fr="Lithium">Lithium</p>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">11</div>
+            <div class="project-info">
+              <h3>Billy-Diamond</h3>
+              <p class="project-commodity" data-en="Li — Pegmatite" data-fr="Li — Pegmatite">Li — Pegmatite</p>
+              <p class="project-meta" data-en="2,413 ha · 46 claims · Jamésie" data-fr="2 413 ha · 46 claims · Jamésie">2,413 ha · 46 claims · Jamésie</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">12</div>
+            <div class="project-info">
+              <h3>LG4</h3>
+              <p class="project-commodity" data-en="Li — Pegmatite" data-fr="Li — Pegmatite">Li — Pegmatite</p>
+              <p class="project-meta" data-en="2,099 ha · 41 claims · Jamésie" data-fr="2 099 ha · 41 claims · Jamésie">2,099 ha · 41 claims · Jamésie</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">13</div>
+            <div class="project-info">
+              <h3>Lac Rouge</h3>
+              <p class="project-commodity" data-en="Li — Pegmatite" data-fr="Li — Pegmatite">Li — Pegmatite</p>
+              <p class="project-meta" data-en="449 ha · 8 claims · Jamésie" data-fr="449 ha · 8 claims · Jamésie">449 ha · 8 claims · Jamésie</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-num" aria-hidden="true">14</div>
+            <div class="project-info">
+              <h3>PowerLi</h3>
+              <p class="project-commodity" data-en="Li — Pegmatite" data-fr="Li — Pegmatite">Li — Pegmatite</p>
+              <p class="project-meta" data-en="1,795 ha · 34 claims · Jamésie" data-fr="1 795 ha · 34 claims · Jamésie">1,795 ha · 34 claims · Jamésie</p>
+            </div>
+            <div class="project-status active-status">
+              <span class="status-dot"></span>
+              <span data-en="Available" data-fr="Disponible">Available</span>
+            </div>
+            <div class="project-action">
+              <a href="contact.html" class="btn-outline" data-en="Inquire" data-fr="Renseignez-Vous">Inquire</a>
+            </div>
+          </div>
+
+        </div><!-- /project-list -->
+
+        <div class="projects-disclaimer fade-in" style="margin-top: 48px;">
+          <p data-en="Detailed geological reports, drill data, and geochemistry available upon direct inquiry. All projects supported by SIGÉOM (MERN) spatial data."
+             data-fr="Rapports géologiques détaillés, données de forage et géochimie disponibles sur demande directe. Tous les projets sont appuyés par les données spatiales du SIGÉOM (MERN).">
+            Detailed geological reports, drill data, and geochemistry available upon direct inquiry. All projects supported by SIGÉOM (MERN) spatial data.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-dark">
+      <div class="container" style="max-width: 540px;">
+        <p class="eyebrow fade-in" style="color: var(--gold);"
+          data-en="Get in Touch" data-fr="Prenez Contact">Get in Touch</p>
+        <h2 class="fade-in delay-1"
+          data-en="Ready to discuss a project?"
+          data-fr="Prêt à discuter d'un projet?">
+          Ready to discuss a project?
+        </h2>
+        <p class="fade-in delay-2" style="color: rgba(255,255,255,0.3); margin-bottom: 40px;"
+          data-en="We respond within 24 hours."
+          data-fr="Nous répondons dans les 24 heures.">
+          We respond within 24 hours.
+        </p>
+        <a href="contact.html" class="btn-outline-light fade-in delay-3"
+          data-en="Contact Us" data-fr="Contactez-Nous">
+          Contact Us
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="nav-logo" style="opacity:0.65;">
+          <div class="logo-mark" style="font-size:1.5rem;"><span class="logo-n">N</span><span class="logo-r">R</span></div>
+          <div class="logo-sep" style="height:26px;"></div>
+          <div class="logo-wordmark">
+            <span class="logo-w1" style="font-size:0.66rem;">NORANDA</span>
+            <span class="logo-w2" style="font-size:0.66rem;">ROYALTIES</span>
+          </div>
+        </a>
+        <nav class="footer-nav">
+          <a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a>
+          <a href="track-record.html" data-en="Track Record" data-fr="Historique">Track Record</a>
+          <a href="about.html" data-en="About" data-fr="À Propos">About</a>
+          <a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-en="© 2026 Noranda Royalties Inc. / Redevances Noranda Inc." data-fr="© 2026 Redevances Noranda Inc. / Noranda Royalties Inc.">
+          © 2026 Noranda Royalties Inc. / Redevances Noranda Inc.
+        </p>
+        <p class="footer-tagline" data-en="Quebec, Canada" data-fr="Québec, Canada">Quebec, Canada</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
